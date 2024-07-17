@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #FFFFFF;
+  --background: #12121B;
+  --primary: #FFFFFF;
+  --secondary: #12121B;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #E3DAC9;
+    --background: #1C1E1B;
+  }
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+a {
+  color: var(--primary);
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+button:hover {
+  background-color: var(--secondary);
+}
+
+.pink-opacity-40 {
+  background-color: rgba(227, 198, 209, 0.3);
+}
+
+.hover-bg-white-opacity-2:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  /* White with 2% opacity */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
