@@ -13,10 +13,6 @@ const Projects: React.FC = () => {
                 <Title color="white">Projects</Title>
             </div>
 
-            <div className="absolute bottom-0 left-0 p-6 md:p-12 lg:p-16 xl:p-24">
-                <Socials />
-            </div>
-
             <div className="absolute inset-0 flex items-center justify-center p-6 md:p-12 lg:p-16 xl:p-24">
                 <ProjectContent />
             </div>

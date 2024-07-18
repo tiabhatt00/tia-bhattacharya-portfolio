@@ -5,8 +5,6 @@ import Skills from './components/sections/skills';
 import Experience from './components/sections/experience';
 import Education from './components/sections/education';
 import Projects from './components/sections/projects';
-import MouseTrackedGradient from './components/sections/components/mouse-tracked-gradient';
-import Head from 'next/head';
 
 const Home: React.FC = () => (
   <div>
@@ -26,7 +24,6 @@ const Home: React.FC = () => (
     <section id="projects" className="h-screen">
       <Projects />
     </section>
-    <MouseTrackedGradient colorScheme='black' />
   </div>
 );
 
