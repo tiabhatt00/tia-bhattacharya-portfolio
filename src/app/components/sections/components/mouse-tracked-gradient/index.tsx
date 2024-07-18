@@ -12,7 +12,7 @@ const MouseTrackedGradient: React.FC<MouseTrackedGradientProps> = ({ colorScheme
 
   const gradients = {
     pink: `radial-gradient(400px at ${x}px ${y}px, rgba(227, 177, 196, 0.5), transparent 70%)`,
-    black: `radial-gradient(400px at ${x}px ${y}px, rgba(27, 42, 73, 0.1), transparent 90%)`,
+    black: `radial-gradient(400px at ${x}px ${y}px, rgba(27, 42, 73, 0.3), transparent 90%)`,
     white: `radial-gradient(400px at ${x}px ${y}px, rgba(27, 42, 73, 0.3), transparent 30%)`,
   };
 
