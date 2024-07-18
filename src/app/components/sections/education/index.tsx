@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable';
+import React, { useEffect, useState } from 'react';
 import { Title } from '../../typography';
 import { University, Coursework, Activities } from './education-sections';
 
@@ -13,6 +12,14 @@ const Education: React.FC = () => {
         { component: <Coursework />, key: 'coursework' },
         { component: <Activities />, key: 'activities' }
     ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveSection(prevSection => (prevSection + 1) % sections.length);
+        }, 5000); 
+
+        return () => clearInterval(interval); 
+    }, [sections.length]);
 
     return (
         <section className="relative h-96 bg-pink font-prompt">
@@ -26,7 +33,7 @@ const Education: React.FC = () => {
 
             {/* TO-DO: Integrate toggle-section Component */}
 
-            <div className="absolute bottom-0 right-4 p-6 md:p-12 lg:p-16 xl:p-24 flex space-x-2">
+            <div className="absolute bottom-0 right-4 pb-4 md:pb-8 lg:pb-12 xl:pb-16 pr-6 md:pr-12 lg:pr-16 xl:pr-24 flex space-x-2">
                 {sections.map((section, index) => (
                     <button
                         key={section.key}

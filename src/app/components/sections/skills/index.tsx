@@ -3,10 +3,9 @@
 import React, { useState } from 'react';
 import { Header, Title } from '../../typography';
 import { technicalSkills } from './constants';
-// import MouseTrackedGradient from '../components/mouse-tracked-gradient';
 
 const Skills: React.FC = () => {
-    const [activeCategory, setActiveCategory] = useState<string | null>(null);
+    const [activeCategory, setActiveCategory] = useState<string| null>(Object.keys(technicalSkills)[0]);
 
     return (
         <section className="relative h-96 bg-primary font-prompt">
@@ -47,7 +46,6 @@ const Skills: React.FC = () => {
                 ))}
             </div>
 
-            {/* <MouseTrackedGradient colorScheme='white'/> */}
         </section>
     );
 };
