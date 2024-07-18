@@ -4,7 +4,7 @@ import { BodySmall } from '../../typography';
 const Section1: React.FC = () => (
     <>
         <BodySmall color="black">
-            I’m a software engineer with over two years of experience in full stack development, API design, and managing application lifecycles and deployments in cloud-native environments. I specialize in delivering end-to-end solutions with expertise in backend technologies such as Java, Spring Boot, and Python, as well as frontend technologies like JavaScript, TypeScript, React, and Angular.
+            I’m a software engineer with over two years of experience in <strong>full stack development</strong>, <strong>API design</strong>, and management of application lifecycles and deployments in <strong>cloud-native environments</strong>. I specialize in delivering end-to-end solutions with expertise in backend technologies such as <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>Python</strong>, as well as frontend technologies like <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React</strong>, and Angular.
         </BodySmall>
         <br /><br />
         <BodySmall color="black">
